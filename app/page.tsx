@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <section className='py-24'>
       <div className='container'>
-        <h1 className='text-3xl font-bold'>Next Third Party</h1>
+        <h1 className='text-3xl font-bold'>GTM</h1>
 
         <section className='mt-12'>
           <h2 className='text-xl font-semibold'>Google Tag Manager</h2>

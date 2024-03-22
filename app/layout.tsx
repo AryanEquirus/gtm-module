@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import { GoogleTagManager } from '@next/third-parties/google'
 
 import './globals.css'
 import Link from 'next/link'
+import GTM from '@/component/GTM'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,23 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
-        <header className='py-6'>
-          <nav className='container'>
-            <ul className='flex gap-8'>
-              <li>
-                <Link href='/'>Home</Link>
-              </li>
-              <li>
-                <Link href='/about'>About</Link>
-              </li>
-            </ul>
-          </nav>
-        </header>
-
+        <GTM/>
         <main>{children}</main>
-        <GoogleTagManager gtmId='GTM-WBM4N32P' />
-      </body>
+      
     </html>
   )
 }
